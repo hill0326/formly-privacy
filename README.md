@@ -4,4 +4,4 @@ Static GitHub Pages site for the Formly privacy policy.
 
 Published URL:
 
-https://hill0326.github.io/Formly/privacy/
+https://hill0326.github.io/formly-privacy/privacy/
