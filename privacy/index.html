@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formly Privacy Policy. Formly stores workout data locally on your device and, when available, in your private iCloud.">
+  <meta name="robots" content="index,follow">
+  <title>Formly Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050607;
+      --panel: rgba(255, 255, 255, 0.065);
+      --panel-strong: rgba(255, 255, 255, 0.105);
+      --text: #f6f7f8;
+      --muted: rgba(246, 247, 248, 0.72);
+      --faint: rgba(246, 247, 248, 0.52);
+      --accent: #b7ff1a;
+      --border: rgba(183, 255, 26, 0.24);
+      --rule: rgba(255, 255, 255, 0.12);
+      --shadow: rgba(0, 0, 0, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(183, 255, 26, 0.16), transparent 30rem),
+        radial-gradient(circle at 88% 8%, rgba(183, 255, 26, 0.11), transparent 24rem),
+        linear-gradient(180deg, #090b0d 0%, var(--bg) 48%, #020303 100%);
+      color: var(--text);
+      font: 16px/1.72 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-color: rgba(183, 255, 26, 0.42);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      text-decoration-color: var(--accent);
+    }
+
+    .page {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 56px 22px 72px;
+    }
+
+    .hero {
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        linear-gradient(135deg, rgba(183, 255, 26, 0.12), transparent 38%),
+        var(--panel);
+      box-shadow: 0 24px 70px var(--shadow);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #050607;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 740px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2.4vw, 22px);
+      font-weight: 600;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.045);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .quick {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .quick-card,
+    section {
+      border: 1px solid var(--rule);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.2);
+    }
+
+    .quick-card {
+      padding: 18px;
+    }
+
+    .quick-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .quick-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .language-nav a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 9px 14px;
+      background: rgba(183, 255, 26, 0.08);
+      color: var(--text);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 18px;
+      padding: 28px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .notice {
+      margin: 18px 0 0;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(183, 255, 26, 0.08);
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .divider {
+      height: 1px;
+      margin: 34px 0;
+      background: linear-gradient(90deg, transparent, rgba(183, 255, 26, 0.55), transparent);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--faint);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 24px 14px 44px;
+      }
+
+      .hero,
+      section {
+        padding: 22px;
+        border-radius: 18px;
+      }
+
+      .quick {
+        grid-template-columns: 1fr;
+      }
+
+      .meta {
+        display: grid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark">F</span>
+        <span>Formly</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Formly is designed as a private workout tracker. Your workout data stays on your device and, when available, in your private iCloud.</p>
+      <div class="meta">
+        <span class="pill">Effective date: June 7, 2026</span>
+        <span class="pill">Last updated: June 7, 2026</span>
+        <span class="pill">Contact: hillappsupport@gmail.com</span>
+      </div>
+    </header>
+
+    <div class="quick" aria-label="Privacy highlights">
+      <div class="quick-card">
+        <strong>No account</strong>
+        <p>Formly does not require you to create an account.</p>
+      </div>
+      <div class="quick-card">
+        <strong>No developer server</strong>
+        <p>We do not operate a server that stores or analyzes your workouts.</p>
+      </div>
+      <div class="quick-card">
+        <strong>No tracking</strong>
+        <p>Formly does not use advertising SDKs or third-party analytics.</p>
+      </div>
+    </div>
+
+    <nav class="language-nav" aria-label="Language">
+      <a href="#zh">中文</a>
+      <a href="#en">English</a>
+    </nav>
+
+    <section id="zh" lang="zh-Hans">
+      <h2>Formly 隐私政策</h2>
+      <p>本隐私政策说明 Formly: Gym Workout Tracker（以下简称“Formly”或“本 App”）如何处理与你相关的信息。</p>
+
+      <div class="notice">核心原则：Formly 不需要账号，不运营用于保存训练数据的开发者服务器，不存储、不上传、不分析你的训练数据。</div>
+
+      <h3>1. 我们是否收集你的个人数据</h3>
+      <p>Formly 当前不通过开发者服务器收集你的个人数据，也不使用第三方广告、追踪或分析 SDK。你的训练数据主要保存在你的设备本地；当 iCloud 可用时，可备份到你的私人 iCloud。</p>
+
+      <h3>2. 保存在设备本地的数据</h3>
+      <p>为了提供训练计划、训练记录和历史分析功能，Formly 会在你的设备本地保存以下数据：</p>
+      <ul>
+        <li>训练偏好，例如训练目标、训练经验、每周训练次数、器械条件、重量单位偏好；</li>
+        <li>训练计划和自定义训练日；</li>
+        <li>训练记录，例如动作、组数、重量、次数、训练时间、训练时长、休息计时状态；</li>
+        <li>动作库使用偏好、训练进度、恢复训练草稿；</li>
+        <li>用于小组件、锁屏和灵动岛展示的本地训练摘要。</li>
+      </ul>
+      <p>这些数据用于在你的设备上展示训练计划、历史趋势、训练容量、动作表现和训练中的实时信息。</p>
+
+      <h3>3. iCloud 备份</h3>
+      <p>当你的设备已登录 iCloud 且 iCloud 可用时，Formly 会将训练偏好、训练计划和训练记录备份到你的私人 iCloud 空间，以便在重装 App 或更换设备后恢复数据。</p>
+      <p>iCloud 备份由 Apple 提供并与你的 Apple ID 相关联。Formly 的开发者无法访问你的私人 iCloud 内容，也不会将这些数据复制到开发者服务器。你可以在设备系统设置中管理 iCloud、Apple ID 和 App 数据。</p>
+
+      <h3>4. 订阅、买断与付款</h3>
+      <p>Formly Pro 的订阅和买断购买由 Apple App Store 和 StoreKit 处理。Formly 使用 StoreKit 在设备上确认你的购买状态，以决定是否解锁 Pro 权益。</p>
+      <p>我们不会接收或保存你的银行卡号、支付账户、账单地址或其他付款凭据。付款、退款、订阅续期和取消订阅由 Apple 处理，并受 Apple 的相关条款和隐私政策约束。</p>
+
+      <h3>5. 通知、实时活动和小组件</h3>
+      <p>如果你允许通知，Formly 可能会发送本地通知，例如组间休息结束提醒。这些通知在你的设备上生成，不会通过 Formly 服务器发送。</p>
+      <p>Formly 也可能在锁屏、灵动岛或小组件中显示当前训练、休息计时、训练摘要等信息。这些信息用于本地展示，不会发送给 Formly 开发者。</p>
+
+      <h3>6. 我们不访问的内容</h3>
+      <p>Formly 当前不会请求或访问以下权限或数据：</p>
+      <ul>
+        <li>通讯录、照片、相机、麦克风、精确位置；</li>
+        <li>HealthKit 健康数据；</li>
+        <li>社交账号、通讯内容或浏览历史；</li>
+        <li>用于广告追踪的标识符。</li>
+      </ul>
+
+      <h3>7. 数据共享</h3>
+      <p>我们不会出售、出租或向第三方共享你的训练数据。Apple 可能会根据其服务条款和隐私政策处理与你的 App Store 购买、iCloud、Apple ID 和设备相关的数据。</p>
+
+      <h3>8. 数据删除与控制</h3>
+      <p>你可以在 App 内删除训练记录或训练计划。你也可以卸载 App 来删除设备上的本地数据。若你启用了 iCloud，部分备份数据可能仍保留在你的 iCloud 中，具体取决于 Apple 的 iCloud 同步和数据管理机制。你可以通过设备系统设置管理 iCloud 和 App 数据。</p>
+      <p>由于 Formly 不运营开发者服务器，我们没有可供登录或远程删除的服务器端训练数据。</p>
+
+      <h3>9. 儿童隐私</h3>
+      <p>Formly 面向一般健身记录场景，并非专门面向儿童。我们不会有意通过开发者服务器收集儿童个人数据。</p>
+
+      <h3>10. 安全</h3>
+      <p>Formly 通过本地存储和 Apple iCloud 提供数据保存与备份体验。请妥善保护你的设备、锁屏密码和 Apple ID。任何电子存储方式都无法保证绝对安全。</p>
+
+      <h3>11. 隐私政策变更</h3>
+      <p>如果 Formly 的功能或数据处理方式发生变化，我们可能会更新本隐私政策。更新后的版本会发布在本页面，并显示新的更新日期。</p>
+
+      <h3>12. 联系我们</h3>
+      <p>如果你对本隐私政策或 Formly 的隐私实践有疑问，请通过以下邮箱联系我们：<a href="mailto:hillappsupport@gmail.com">hillappsupport@gmail.com</a></p>
+
+      <p>使用条款：Formly 使用 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准最终用户许可协议（EULA）</a>，除非 App Store 产品页面另有说明。</p>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="en" lang="en">
+      <h2>Formly Privacy Policy</h2>
+      <p>This Privacy Policy explains how Formly: Gym Workout Tracker (“Formly,” “the app,” “we,” or “us”) handles information related to you.</p>
+
+      <div class="notice">Core principle: Formly does not require an account, does not operate a developer server for workout data, and does not store, upload, or analyze your workout data on our servers.</div>
+
+      <h3>1. Whether we collect personal data</h3>
+      <p>Formly does not collect your personal data through a developer-operated server. Formly does not use third-party advertising, tracking, or analytics SDKs. Your workout data is primarily stored locally on your device and, when available, may be backed up to your private iCloud.</p>
+
+      <h3>2. Data stored locally on your device</h3>
+      <p>To provide workout plans, workout logging, and history features, Formly stores the following data locally on your device:</p>
+      <ul>
+        <li>Training preferences, such as goal, experience level, weekly training frequency, available equipment, and weight unit preference;</li>
+        <li>Workout plans and custom workout days;</li>
+        <li>Workout records, such as exercises, sets, weight, reps, workout time, workout duration, and rest timer state;</li>
+        <li>Exercise library preferences, progress, and active workout drafts;</li>
+        <li>Local workout summaries used for widgets, Lock Screen, and Dynamic Island display.</li>
+      </ul>
+      <p>This information is used to show your plan, history trends, training volume, exercise performance, and live workout information on your device.</p>
+
+      <h3>3. iCloud backup</h3>
+      <p>When your device is signed in to iCloud and iCloud is available, Formly may back up your training preferences, workout plans, and workout records to your private iCloud space so your data can be restored after reinstalling the app or switching devices.</p>
+      <p>iCloud backup is provided by Apple and associated with your Apple ID. The developer of Formly cannot access your private iCloud content and does not copy this data to a developer-operated server. You can manage iCloud, Apple ID, and app data in your device settings.</p>
+
+      <h3>4. Subscriptions, lifetime purchase, and payments</h3>
+      <p>Formly Pro subscriptions and lifetime purchases are processed by Apple App Store and StoreKit. Formly uses StoreKit on your device to determine whether Pro access should be unlocked.</p>
+      <p>We do not receive or store your credit card number, payment account, billing address, or other payment credentials. Payments, refunds, subscription renewals, and subscription cancellations are handled by Apple and are subject to Apple’s terms and privacy policy.</p>
+
+      <h3>5. Notifications, Live Activities, and widgets</h3>
+      <p>If you allow notifications, Formly may send local notifications, such as rest-complete reminders. These notifications are generated on your device and are not sent through Formly servers.</p>
+      <p>Formly may also display current workout information, rest timers, and workout summaries on the Lock Screen, Dynamic Island, or widgets. This information is used for local display and is not sent to the developer of Formly.</p>
+
+      <h3>6. Data and permissions we do not access</h3>
+      <p>Formly currently does not request or access:</p>
+      <ul>
+        <li>Contacts, photos, camera, microphone, or precise location;</li>
+        <li>HealthKit health data;</li>
+        <li>Social accounts, messages, or browsing history;</li>
+        <li>Advertising tracking identifiers.</li>
+      </ul>
+
+      <h3>7. Data sharing</h3>
+      <p>We do not sell, rent, or share your workout data with third parties. Apple may process data related to your App Store purchases, iCloud, Apple ID, and device under Apple’s own terms and privacy policy.</p>
+
+      <h3>8. Data deletion and control</h3>
+      <p>You can delete workout records or workout plans inside the app. You can also uninstall the app to remove local data from your device. If iCloud backup is enabled, some backup data may remain in your iCloud depending on Apple’s iCloud sync and data management behavior. You can manage iCloud and app data in your device settings.</p>
+      <p>Because Formly does not operate a developer server, there is no server-side workout account or remote workout database for us to delete.</p>
+
+      <h3>9. Children’s privacy</h3>
+      <p>Formly is intended for general fitness logging and is not directed specifically to children. We do not knowingly collect children’s personal data through a developer-operated server.</p>
+
+      <h3>10. Security</h3>
+      <p>Formly uses local storage and Apple iCloud to provide data storage and backup features. Please protect your device passcode and Apple ID. No method of electronic storage can be guaranteed to be completely secure.</p>
+
+      <h3>11. Changes to this Privacy Policy</h3>
+      <p>If Formly’s features or data handling practices change, we may update this Privacy Policy. The updated version will be posted on this page with a new update date.</p>
+
+      <h3>12. Contact us</h3>
+      <p>If you have questions about this Privacy Policy or Formly’s privacy practices, contact us at <a href="mailto:hillappsupport@gmail.com">hillappsupport@gmail.com</a>.</p>
+
+      <p>Terms of Use: Formly uses the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard End User License Agreement (EULA)</a>, unless otherwise stated on the App Store product page.</p>
+    </section>
+
+    <p class="footer">© 2026 Formly. No cookies. No analytics. No external scripts.</p>
+  </main>
+</body>
+</html>
