@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,13 +79,19 @@
     .brand-mark {
       width: 32px;
       height: 32px;
+      overflow: hidden;
       display: inline-grid;
       place-items: center;
       border-radius: 10px;
-      background: var(--accent);
-      color: #050607;
-      font-size: 18px;
-      font-weight: 900;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
     }
 
     h1 {
@@ -253,7 +259,9 @@
   <main class="page">
     <header class="hero">
       <div class="brand">
-        <span class="brand-mark">F</span>
+        <span class="brand-mark">
+          <img src="../assets/formly-app-icon.png" alt="Formly app icon" width="32" height="32">
+        </span>
         <span>Formly</span>
       </div>
       <h1>Privacy Policy</h1>
@@ -281,9 +289,74 @@
     </div>
 
     <nav class="language-nav" aria-label="Language">
-      <a href="#zh">中文</a>
       <a href="#en">English</a>
+      <a href="#zh">中文</a>
     </nav>
+
+    <section id="en" lang="en">
+      <h2>Formly Privacy Policy</h2>
+      <p>This Privacy Policy explains how Formly: Gym Workout Tracker (“Formly,” “the app,” “we,” or “us”) handles information related to you.</p>
+
+      <div class="notice">Core principle: Formly does not require an account, does not operate a developer server for workout data, and does not store, upload, or analyze your workout data on our servers.</div>
+
+      <h3>1. Whether we collect personal data</h3>
+      <p>Formly does not collect your personal data through a developer-operated server. Formly does not use third-party advertising, tracking, or analytics SDKs. Your workout data is primarily stored locally on your device and, when available, may be backed up to your private iCloud.</p>
+
+      <h3>2. Data stored locally on your device</h3>
+      <p>To provide workout plans, workout logging, and history features, Formly stores the following data locally on your device:</p>
+      <ul>
+        <li>Training preferences, such as goal, experience level, weekly training frequency, available equipment, and weight unit preference;</li>
+        <li>Workout plans and custom workout days;</li>
+        <li>Workout records, such as exercises, sets, weight, reps, workout time, workout duration, and rest timer state;</li>
+        <li>Exercise library preferences, progress, and active workout drafts;</li>
+        <li>Local workout summaries used for widgets, Lock Screen, and Dynamic Island display.</li>
+      </ul>
+      <p>This information is used to show your plan, history trends, training volume, exercise performance, and live workout information on your device.</p>
+
+      <h3>3. iCloud backup</h3>
+      <p>When your device is signed in to iCloud and iCloud is available, Formly may back up your training preferences, workout plans, and workout records to your private iCloud space so your data can be restored after reinstalling the app or switching devices.</p>
+      <p>iCloud backup is provided by Apple and associated with your Apple ID. The developer of Formly cannot access your private iCloud content and does not copy this data to a developer-operated server. You can manage iCloud, Apple ID, and app data in your device settings.</p>
+
+      <h3>4. Subscriptions, lifetime purchase, and payments</h3>
+      <p>Formly Pro subscriptions and lifetime purchases are processed by Apple App Store and StoreKit. Formly uses StoreKit on your device to determine whether Pro access should be unlocked.</p>
+      <p>We do not receive or store your credit card number, payment account, billing address, or other payment credentials. Payments, refunds, subscription renewals, and subscription cancellations are handled by Apple and are subject to Apple’s terms and privacy policy.</p>
+
+      <h3>5. Notifications, Live Activities, and widgets</h3>
+      <p>If you allow notifications, Formly may send local notifications, such as rest-complete reminders. These notifications are generated on your device and are not sent through Formly servers.</p>
+      <p>Formly may also display current workout information, rest timers, and workout summaries on the Lock Screen, Dynamic Island, or widgets. This information is used for local display and is not sent to the developer of Formly.</p>
+
+      <h3>6. Data and permissions we do not access</h3>
+      <p>Formly currently does not request or access:</p>
+      <ul>
+        <li>Contacts, photos, camera, microphone, or precise location;</li>
+        <li>HealthKit health data;</li>
+        <li>Social accounts, messages, or browsing history;</li>
+        <li>Advertising tracking identifiers.</li>
+      </ul>
+
+      <h3>7. Data sharing</h3>
+      <p>We do not sell, rent, or share your workout data with third parties. Apple may process data related to your App Store purchases, iCloud, Apple ID, and device under Apple’s own terms and privacy policy.</p>
+
+      <h3>8. Data deletion and control</h3>
+      <p>You can delete workout records or workout plans inside the app. You can also uninstall the app to remove local data from your device. If iCloud backup is enabled, some backup data may remain in your iCloud depending on Apple’s iCloud sync and data management behavior. You can manage iCloud and app data in your device settings.</p>
+      <p>Because Formly does not operate a developer server, there is no server-side workout account or remote workout database for us to delete.</p>
+
+      <h3>9. Children’s privacy</h3>
+      <p>Formly is intended for general fitness logging and is not directed specifically to children. We do not knowingly collect children’s personal data through a developer-operated server.</p>
+
+      <h3>10. Security</h3>
+      <p>Formly uses local storage and Apple iCloud to provide data storage and backup features. Please protect your device passcode and Apple ID. No method of electronic storage can be guaranteed to be completely secure.</p>
+
+      <h3>11. Changes to this Privacy Policy</h3>
+      <p>If Formly’s features or data handling practices change, we may update this Privacy Policy. The updated version will be posted on this page with a new update date.</p>
+
+      <h3>12. Contact us</h3>
+      <p>If you have questions about this Privacy Policy or Formly’s privacy practices, contact us at <a href="mailto:hillappsupport@gmail.com">hillappsupport@gmail.com</a>.</p>
+
+      <p>Terms of Use: Formly uses the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard End User License Agreement (EULA)</a>, unless otherwise stated on the App Store product page.</p>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
 
     <section id="zh" lang="zh-Hans">
       <h2>Formly 隐私政策</h2>
@@ -348,70 +421,7 @@
       <p>使用条款：Formly 使用 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准最终用户许可协议（EULA）</a>，除非 App Store 产品页面另有说明。</p>
     </section>
 
-    <div class="divider" aria-hidden="true"></div>
 
-    <section id="en" lang="en">
-      <h2>Formly Privacy Policy</h2>
-      <p>This Privacy Policy explains how Formly: Gym Workout Tracker (“Formly,” “the app,” “we,” or “us”) handles information related to you.</p>
-
-      <div class="notice">Core principle: Formly does not require an account, does not operate a developer server for workout data, and does not store, upload, or analyze your workout data on our servers.</div>
-
-      <h3>1. Whether we collect personal data</h3>
-      <p>Formly does not collect your personal data through a developer-operated server. Formly does not use third-party advertising, tracking, or analytics SDKs. Your workout data is primarily stored locally on your device and, when available, may be backed up to your private iCloud.</p>
-
-      <h3>2. Data stored locally on your device</h3>
-      <p>To provide workout plans, workout logging, and history features, Formly stores the following data locally on your device:</p>
-      <ul>
-        <li>Training preferences, such as goal, experience level, weekly training frequency, available equipment, and weight unit preference;</li>
-        <li>Workout plans and custom workout days;</li>
-        <li>Workout records, such as exercises, sets, weight, reps, workout time, workout duration, and rest timer state;</li>
-        <li>Exercise library preferences, progress, and active workout drafts;</li>
-        <li>Local workout summaries used for widgets, Lock Screen, and Dynamic Island display.</li>
-      </ul>
-      <p>This information is used to show your plan, history trends, training volume, exercise performance, and live workout information on your device.</p>
-
-      <h3>3. iCloud backup</h3>
-      <p>When your device is signed in to iCloud and iCloud is available, Formly may back up your training preferences, workout plans, and workout records to your private iCloud space so your data can be restored after reinstalling the app or switching devices.</p>
-      <p>iCloud backup is provided by Apple and associated with your Apple ID. The developer of Formly cannot access your private iCloud content and does not copy this data to a developer-operated server. You can manage iCloud, Apple ID, and app data in your device settings.</p>
-
-      <h3>4. Subscriptions, lifetime purchase, and payments</h3>
-      <p>Formly Pro subscriptions and lifetime purchases are processed by Apple App Store and StoreKit. Formly uses StoreKit on your device to determine whether Pro access should be unlocked.</p>
-      <p>We do not receive or store your credit card number, payment account, billing address, or other payment credentials. Payments, refunds, subscription renewals, and subscription cancellations are handled by Apple and are subject to Apple’s terms and privacy policy.</p>
-
-      <h3>5. Notifications, Live Activities, and widgets</h3>
-      <p>If you allow notifications, Formly may send local notifications, such as rest-complete reminders. These notifications are generated on your device and are not sent through Formly servers.</p>
-      <p>Formly may also display current workout information, rest timers, and workout summaries on the Lock Screen, Dynamic Island, or widgets. This information is used for local display and is not sent to the developer of Formly.</p>
-
-      <h3>6. Data and permissions we do not access</h3>
-      <p>Formly currently does not request or access:</p>
-      <ul>
-        <li>Contacts, photos, camera, microphone, or precise location;</li>
-        <li>HealthKit health data;</li>
-        <li>Social accounts, messages, or browsing history;</li>
-        <li>Advertising tracking identifiers.</li>
-      </ul>
-
-      <h3>7. Data sharing</h3>
-      <p>We do not sell, rent, or share your workout data with third parties. Apple may process data related to your App Store purchases, iCloud, Apple ID, and device under Apple’s own terms and privacy policy.</p>
-
-      <h3>8. Data deletion and control</h3>
-      <p>You can delete workout records or workout plans inside the app. You can also uninstall the app to remove local data from your device. If iCloud backup is enabled, some backup data may remain in your iCloud depending on Apple’s iCloud sync and data management behavior. You can manage iCloud and app data in your device settings.</p>
-      <p>Because Formly does not operate a developer server, there is no server-side workout account or remote workout database for us to delete.</p>
-
-      <h3>9. Children’s privacy</h3>
-      <p>Formly is intended for general fitness logging and is not directed specifically to children. We do not knowingly collect children’s personal data through a developer-operated server.</p>
-
-      <h3>10. Security</h3>
-      <p>Formly uses local storage and Apple iCloud to provide data storage and backup features. Please protect your device passcode and Apple ID. No method of electronic storage can be guaranteed to be completely secure.</p>
-
-      <h3>11. Changes to this Privacy Policy</h3>
-      <p>If Formly’s features or data handling practices change, we may update this Privacy Policy. The updated version will be posted on this page with a new update date.</p>
-
-      <h3>12. Contact us</h3>
-      <p>If you have questions about this Privacy Policy or Formly’s privacy practices, contact us at <a href="mailto:hillappsupport@gmail.com">hillappsupport@gmail.com</a>.</p>
-
-      <p>Terms of Use: Formly uses the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard End User License Agreement (EULA)</a>, unless otherwise stated on the App Store product page.</p>
-    </section>
 
     <p class="footer">© 2026 Formly. No cookies. No analytics. No external scripts.</p>
   </main>
