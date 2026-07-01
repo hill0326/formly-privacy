@@ -1,6 +1,6 @@
 # Formly Privacy Policy
 
-Static GitHub Pages site for the Formly privacy policy.
+Static GitHub Pages site for the Formly privacy policy in English, Simplified Chinese, French, and Spanish.
 
 Published URL:
 
